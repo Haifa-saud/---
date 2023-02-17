@@ -1,0 +1,13 @@
+$("#frm table tbody table tbody").each(function(i,elm){
+  $(this).find('input[type=radio]').each(function(i,elm){
+    if($(this).attr("id") == "opt017"){
+      if($(this).attr("value") != "11851"){return true};
+      $(this).prop("checked",true);
+    }else if($(this).attr("id") == "opt37"){
+      if($(this).attr("value") != "4853"){return true};
+      $(this).prop("checked",true);
+    }else{
+      $(this).prop("checked",true)
+    }
+  })
+})
